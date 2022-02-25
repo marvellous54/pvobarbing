@@ -1,0 +1,230 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: ubuntu;
+	overflow-x: hidden;
+	text-decoration: none;
+}
+
+body{
+	background-color: #745454;
+}
+
+/*---DO_NOT_TOUCH_CODE_ABOVE_HERE----------------------------------*/
+
+
+/*--TOP_PAGE-------------------------------------------------------*/ 
+
+/*--BODIES--*/
+.top-page{
+    height: 70vh;
+    background: url(img/header-img.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav{
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.WelcomeText{
+    height: 85%;
+    background-color: ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+/*--LINKS--*/
+nav p a{
+    margin: 2em;
+    color: #ece5e5;
+    text-shadow: 0px 0px 3px rgb(0, 0, 0);
+}
+
+.logo{
+    margin: 2em;
+    position: fixed;
+}
+
+nav p{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*--TEXTS--*/
+.WelcomeText p:nth-child(1){
+    font-size: 2em;
+    font-weight: 300;
+    padding: 0.2em;
+    color: #e2dbcf;
+    text-shadow: 0px 0px 2px black;
+}
+
+.WelcomeText p:nth-child(2){
+    text-shadow: 0px 0px 2px white;
+    font-family: /* Titillium Web */ Rowdies;
+    color: #1b1b1b;
+    text-transform: uppercase;
+    font-weight: 50;
+}
+
+/*--DOTS--*/
+.dot-row{
+    display: flex;
+}
+
+.dots{
+    padding: 0.5em;
+    border-radius: 50%;
+    background-color: transparent;
+    margin: 1em 0.3em;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    border: 0.5px solid white;
+}
+
+.dot1{
+    animation-name: red;
+}
+
+.dot2{
+    animation-name: blue;
+}
+
+.dot3{
+    animation-name: green;
+    animation-duration: 1;
+}
+
+/*--------------------------------------------------------------------*/
+
+.motto{
+    padding: 2em;
+    text-align: center;
+    padding: 2em 0.5em;
+    width: 100%;
+    height: auto;
+    font-size: 1.275em;
+}
+
+.motto p{
+    font-family: redressed;
+}
+
+.motto b{
+    font-family: redressed;
+}
+
+.about{
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    padding: 1em 0 1em 0;
+    width: 100%;
+    background-color: #745454;
+    box-shadow: 0px 0px 2px rgb(15, 15, 15);
+    margin: 1em;
+}
+
+.container p{
+    font-family: redressed;
+    font-size: 1.15em;
+}
+
+.container p:nth-child(2){
+    font-weight: bold;
+}
+
+.img{
+    width: inherit;
+    height: 10em;
+    background: url(img/Service.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img2{
+    background-image: url(img/certificate.png);
+}
+
+.img3{
+    background-image: url(img/price.png);
+}
+
+.container p{
+    text-align: center;
+    margin: 1em;
+}
+
+/*------------MEDIA_QUERY---------------------------------------------*/
+
+@media all and (max-width: 600px){
+    .top-page{
+        height: 50vh;
+    }
+
+    .logo{
+        position: absolute;
+        opacity: 0;
+    }
+
+    nav{
+        justify-content: center;
+    }
+
+    nav p a{
+        margin: 0.5em;
+    }
+
+    nav p{
+        justify-content: center;
+        z-index: 99;
+    }
+
+    .about{
+        flex-flow: column;
+    }
+}
+
+
+@media all and (min-width: 600px){
+    .WelcomeText p{
+        transform: scale(1.5);
+        padding: 0.5em;
+    }
+}
+
+
+/*--ANIMATION--------------------------------------------------------------*/
+
+@keyframes red {
+    0%{
+        background-color: #ece7e7;
+    }
+}
+
+@keyframes blue {
+    50%{
+        background-color: #ebe2e2;
+    }
+}
+
+@keyframes green {
+    90%{
+        background-color: #f3e9e9;
+    }
+}
