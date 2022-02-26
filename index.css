@@ -170,6 +170,62 @@ nav p{
     margin: 1em;
 }
 
+/*----------------------------------------------------------------------*/
+
+#footer{
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: #644848;
+    box-shadow: 0px 0px 2px black;
+}
+
+#footer p{
+    margin: 0.25em;
+    font-weight: bold;
+}
+
+#form{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.number{
+    color: #41f10b;
+}
+
+#message{
+    background-color: #1b1b1b;
+    border: none;
+    height: 2em;
+    text-align: center;
+    margin-bottom: 0.2em;
+}
+
+#email{
+    background-color: #1b1b1b;
+    border: none;
+    height: 2em;
+    text-align: center;
+    margin: 0.2em;
+}
+
+#btn{
+    width: 5em;
+    border-radius: 0.5em;
+    margin: 0.2em;
+    background: transparent;
+    border: 0.1em solid white;
+    padding: 0.5em;
+}
+
+
 /*------------MEDIA_QUERY---------------------------------------------*/
 
 @media all and (max-width: 600px){
