@@ -227,6 +227,12 @@ nav p{
     padding: 0.5em;
 }
 
+.message-sent{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 /*------------MEDIA_QUERY---------------------------------------------*/
 
